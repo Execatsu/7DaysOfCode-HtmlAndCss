@@ -1,0 +1,283 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap';
+
+:root {
+    --light-font: #667085;
+    --dark-font: #101828;
+    --main: #8E2424;
+    --main-light: #C3191908;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter';
+    color: var(--light-font);   
+}
+
+h2 {
+    margin: 24px 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--dark-font);
+}
+
+button, input[type=submit] {
+    padding: 10px 18px;
+    background: var(--main);
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-font);
+}
+
+/* Nav */
+
+nav h1, nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid var(--main);
+}
+
+nav h1 p {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark-font);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li, nav li a {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav li:hover, nav li a:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
+nav div {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+nav div > button {
+    background: none;
+    color: var(--light-font);
+}
+
+/* Sobre */
+
+.sobre {
+    margin: 0 auto;
+    padding: 96px;
+    width: 650px;
+    text-align: center;
+}
+
+.sobre span {
+    color: var(--main);
+    font-weight: bold;
+}
+
+.sobre p {
+    margin: 12px 0;
+}
+
+/* Info */
+
+.info {
+    padding: 0 40px;
+}
+
+.info ul {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.info li {
+    width: 20%;
+    vertical-align: top;
+}
+
+.info h2 {
+    font-size: 60px;
+    color: var(--main);
+    font-weight: bold;
+}
+
+.info span {
+    font-size: 18px;
+    color: var(--dark-font);
+    font-weight: bold;
+}
+
+/* Contratos */
+
+.contratos, .contratos div:first-child {
+    text-align: center;
+}
+
+.contratos {
+    padding: 100px 0;
+}
+
+.contratos div:first-child span {
+    padding: 4px 12px;
+    background: var(--main-light);
+    border-radius: 16px;
+    color: var(--main);
+    font-weight: bold;
+}
+
+.contratos h3 {
+    margin: 20px 0;
+    color: var(--dark-font);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.contratos img {
+    margin: 64px 0;
+}
+
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+}
+
+.vagas section {
+    text-align: start;
+    margin: 0 auto 64px auto;
+}
+
+.vagas h5 {
+    color: var(--dark-font);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vagas ul {
+    margin-top: 32px;
+}
+
+.vagas li {
+    padding: 24px;
+    margin: 12px 0;
+    width: 40vw;
+    border: 1px solid #EAECF0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.vagas h6 {
+    color: var(--dark-font);
+    font-size: 18px;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.vagas span {
+    color: var(--light-font);
+    font-size: 16px;
+    margin-right: 24px;
+}
+
+/* Comentarios */
+
+.comentario > div {
+    width: 90%;
+    padding: 64px;
+    margin: 0 5%;
+    box-sizing: border-box;
+    background-color: var(--main-light);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.comentario h2, .comentario img {
+    margin: 16px 0;
+}
+
+.comentario p:first-child {
+    color: var(--main);
+    font-weight: bold;
+}
+
+.comentario p {
+    color: var(--dark-font);
+    font-weight: bold;
+}
+
+.comentario div div span {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 96px;
+    padding: 96px 0;
+    text-align: center;
+    background: #F9FAFB;
+}
+
+footer > form {
+    margin: 35px;
+}
+
+footer input, footer input::placeholder {
+    line-height: 24px;
+    color: var(--light-font);
+    font-family: 'Inter';
+}
+
+footer input:not([type=submit]) {
+    margin: 0 16px;
+    padding: 12px 15px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px #1018280D;
+    width: 360px;
+}
+
+footer input[type=submit]:hover {
+    box-shadow: 0 1px 2px #00000060;
+}
+
+footer input[type=submit]:active {
+    opacity: 70%;
+}
+
+footer span {
+    color: #98A2B3;
+}
+
+footer span::before {
+    content: "\00A9";
+}
